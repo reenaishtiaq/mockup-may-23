@@ -1,4 +1,104 @@
-/* Write all your CSS here */
-/* Please indent properly */
-/* Please use only lower-case letters */
-/* Your webpage should be 100% responsive!!! */
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#side-bar {
+    background-color: #3f0e40;
+    color: #cbbfb8;
+    width: 20%;
+    height: auto;
+    font-size: 20px;
+    font-family: Slack v2;
+}
+#side-bar li:hover {
+    background-color: #1164a3;
+    color: #ebf2f7;
+}
+#side-bar ul {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px; 
+}
+.tk-2019 ul {
+    list-style-type: none;
+    
+}
+.tk-2019 ul :first-child {
+    display: flex;
+    justify-content: space-between;
+}
+#search-bar {
+    border: 1px solid #260027;
+    border-radius: 5px;
+    display: flex;
+    padding: 7px 8px;
+    margin: 0px 15px;
+    background-color: #260027;
+    color: #a693a8;
+}
+#thread {
+    margin: 25px 15px;
+}
+.channels ul, .messages ul, .Apps ul, #thread ul{
+    list-style-type: none;
+
+}
+.channels li, .messages li, .Apps li {
+    padding-bottom: 5px;
+}
+.channels ul :first-child, .messages ul :first-child, .Apps ul :first-child{
+    display: flex;
+    justify-content: space-between;
+}
+.messages ul :nth-child(2), .channels li {
+    display: flex;
+}
+.Apps ul :last-child {
+    color: #2bac76; 
+}
+span i{
+    margin: 6px 3px;
+    color: #2bac76;
+    font-size: 13px;
+}
+.details{
+    padding-left: 1em;
+    width: 80%;
+    
+}
+header {
+    color: #b5b5b5;
+    background-color: white;
+    margin-top: 0px;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+header i {
+    padding: 0 8px;
+
+}
+header #msg-box i{
+    
+    border-left: 1px solid #d3d3d3;
+}
+form {
+    display: inline;
+    border: 1px solid grey;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+input {
+    border: none;
+}
+
+
+
+
+

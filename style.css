@@ -20,12 +20,11 @@ main{
     color: #ebf2f7;
 }
 #side-bar ul {
-    padding-inline-start: 15px;
-    padding-inline-end: 15px; 
+    padding-inline-start: 10px;
+    padding-inline-end: 10px; 
 }
 .tk-2019 ul {
     list-style-type: none;
-    
 }
 .tk-2019 ul :first-child {
     display: flex;
@@ -35,17 +34,17 @@ main{
     border: 1px solid #260027;
     border-radius: 5px;
     display: flex;
-    padding: 7px 8px;
+    padding: 3px 8px;
     margin: 0px 15px;
     background-color: #260027;
     color: #a693a8;
 }
 #thread {
-    margin: 25px 15px;
+    display: flex;
+    margin: 16px 15px;
 }
 .channels ul, .messages ul, .Apps ul, #thread ul{
     list-style-type: none;
-
 }
 .channels li, .messages li, .Apps li {
     padding-bottom: 5px;
@@ -61,7 +60,7 @@ main{
     color: #2bac76; 
 }
 span i{
-    margin: 6px 3px;
+    margin: 1px;
     color: #2bac76;
     font-size: 13px;
 }
@@ -79,13 +78,15 @@ header {
     display: flex;
     justify-content: space-between;
     position: sticky;
+    top: 0;
+}
+header h2 {
+    color: rgb(12, 11, 11);
 }
 header i {
     padding: 0 8px;
-
 }
 header #msg-box i{
-    
     border-left: 1px solid #d3d3d3;
 }
 form {
@@ -96,6 +97,58 @@ form {
 }
 input {
     border: none;
+}
+span {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+.chat {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+.chat h3 {
+    margin: 1px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+.text p {
+    margin: 2px 0;
+}
+.text i {
+    margin: 5px 0;
+    padding: 0 5px;
+    letter-spacing: 9px;
+    color: rgb(73, 53, 53);
+}
+a {
+    text-decoration: none;
+}
+#rply {
+    border: 2px solid grey;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+}
+#rply :first-child {
+    display: flex;
+    justify-content: start;
+    color: grey;
+    font-size: 15px;
+}
+#rply :nth-child(2) {
+    display: flex;
+    justify-content: start;
+}
+#rply div {
+    display: flex;
+    justify-content: end;
 }
 
 

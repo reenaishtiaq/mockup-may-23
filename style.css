@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 main{
     display: flex;
@@ -30,14 +31,25 @@ main{
     display: flex;
     justify-content: space-between;
 }
-#search-bar {
+#search-bar span {
     border: 1px solid #260027;
     border-radius: 5px;
     display: flex;
-    padding: 3px 8px;
-    margin: 0px 15px;
+    padding: 10px 6px;
+    margin: 10px 15px;
     background-color: #260027;
     color: #a693a8;
+}
+#search-bar input {
+    background-color: #260027;
+    border: none;
+    padding: 0 2px;
+    width: 100px;
+}
+#search-bar i {
+    color: #937e95;
+    font-size: 20px;
+    margin-right: 7px;
 }
 #thread {
     display: flex;
@@ -46,14 +58,14 @@ main{
 .channels ul, .messages ul, .Apps ul, #thread ul{
     list-style-type: none;
 }
-.channels li, .messages li, .Apps li {
+.channels li, .messages li, .Apps li{
     padding-bottom: 5px;
 }
 .channels ul :first-child, .messages ul :first-child, .Apps ul :first-child{
     display: flex;
     justify-content: space-between;
 }
-.messages ul :nth-child(2), .channels li {
+.messages li, .channels li {
     display: flex;
 }
 .Apps ul :last-child {
@@ -67,7 +79,7 @@ span i{
 .details{
     padding-left: 1em;
     width: 80%;
-    
+    color: #191717de;
 }
 header {
     color: #b5b5b5;
@@ -128,29 +140,38 @@ span {
 a {
     text-decoration: none;
 }
+
 #rply {
     border: 2px solid grey;
     padding: 10px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
 }
-#rply :first-child {
-    display: flex;
-    justify-content: start;
-    color: grey;
-    font-size: 15px;
+#rply .write-text {
+    color: #d2d2d2;
+    display: inline-flex;
+    margin-top: 10px;
 }
-#rply :nth-child(2) {
-    display: flex;
-    justify-content: start;
+#rply i {
+    margin-right: 20px;
+    color: #937e95;
+    font-size: 20px;
 }
-#rply div {
-    display: flex;
-    justify-content: end;
+#rply .msg-icon {
+    display: inline-flex;
+    justify-items: right;
 }
 
+@media screen and (max-width: 600px) {
+    #side-bar {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+}
 
 
 

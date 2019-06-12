@@ -8,6 +8,15 @@ main{
     flex-direction: row;
     width: 100%;
 }
+#ecoenergy {
+    background-color: #200720;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+#ecoenergy img {
+    margin: 10px 0;
+}
 #side-bar {
     background-color: #3f0e40;
     color: #cbbfb8;
@@ -24,13 +33,6 @@ main{
     padding-inline-start: 10px;
     padding-inline-end: 10px; 
 }
-.tk-2019 ul {
-    list-style-type: none;
-}
-.tk-2019 ul :first-child {
-    display: flex;
-    justify-content: space-between;
-}
 #search-bar span {
     border: 1px solid #260027;
     border-radius: 5px;
@@ -42,7 +44,7 @@ main{
 }
 #search-bar input {
     background-color: #260027;
-    border: none;
+    outline: none;
     padding: 0 2px;
     width: 100px;
 }
@@ -55,23 +57,23 @@ main{
     display: flex;
     margin: 16px 15px;
 }
-.channels ul, .messages ul, .Apps ul, #thread ul{
+.tk-2019 ul, .channels ul, .messages ul, .Apps ul, #thread ul{
     list-style-type: none;
 }
-.channels li, .messages li, .Apps li{
+.tk-2019 li, .channels li, .messages li, .Apps li{
     padding-bottom: 5px;
 }
-.channels ul :first-child, .messages ul :first-child, .Apps ul :first-child{
+.tk-2019 ul :first-child, .channels ul :first-child, .messages ul :first-child, .Apps ul :first-child{
     display: flex;
     justify-content: space-between;
 }
-.messages li, .channels li {
+.tk-2019 li, .messages li, .channels li {
     display: flex;
 }
 .Apps ul :last-child {
     color: #2bac76; 
 }
-span i{
+#side-bar span i{
     margin: 1px;
     color: #2bac76;
     font-size: 13px;
@@ -98,16 +100,30 @@ header h2 {
 header i {
     padding: 0 8px;
 }
-header #msg-box i{
+#content {
+    display: flex;
+    flex-direction: row;
+}
+#chat-area {
+    width: 75%;
+}
+#msg-box i:hover {
+    color: rgb(122, 122, 219);
+}
+#msg-box i{
     border-left: 1px solid #d3d3d3;
 }
-form {
+#search-box i:hover {
+    color: rgb(122, 122, 219);
+}
+#search-box span {
     display: inline;
     border: 1px solid grey;
     padding: 3px 5px;
     border-radius: 5px;
 }
 input {
+    outline: none;
     border: none;
 }
 span {
@@ -142,8 +158,12 @@ a {
 }
 
 #rply {
+    position: fixed;
+    bottom: 0%;
+    width: 74%;
+    background-color: rgb(240, 232, 232);
     border: 2px solid grey;
-    padding: 10px 10px;
+    padding: 3px 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
@@ -154,6 +174,15 @@ a {
     display: inline-flex;
     margin-top: 10px;
 }
+.write-text input {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(240, 232, 232);
+}
+.write-text i {
+    font-size: 20px;
+}
 #rply i {
     margin-right: 20px;
     color: #937e95;
@@ -163,16 +192,72 @@ a {
     display: inline-flex;
     justify-items: right;
 }
+#aside-bar {
+    margin-bottom: 37px;
+    padding: 2px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 25%;
+}
+#aside-bar h2  {
+    font-size: 20px;
+    color: #1e1e1dc7;
+}
+#aside-bar .chat {
+    margin: 0;
+}
+#aside-bar i {
+    margin-right: 8px;
+    font-size: 15px;
+}
+details {
+    
+   border-top: 1px solid grey;
+    padding: 15px;
+    font-size: 13px;
+    color: darkslategrey;
+    font-size: 18px;
+}
+details h3 {
+    color: #080807;
+}
+details h4 {
+    color:#686867;
+}
+details p{
+    color: #797978;
+}
+summary {
+    outline: none;
+}
+#member h3 {
+   display: flex;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     #side-bar {
+        width: auto;
+    }
+    #ecoenergy {
         display: none;
     }
     header {
         display: none;
     }
+    #rply {
+        width: 90%;
+    }
+    #aside-bar {
+        display: none;
+    }
 }
-
-
-
-
